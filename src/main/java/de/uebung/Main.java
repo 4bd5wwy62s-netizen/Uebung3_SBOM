@@ -1,6 +1,7 @@
 package de.uebung;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.common.base.Joiner;
 import com.google.common.collect.ImmutableList;
 import org.apache.commons.lang3.StringUtils;
 
@@ -25,6 +26,8 @@ public class Main {
         daten.put("anzahlPakete", pakete.size());
         daten.put("pakete", pakete);
         daten.put("javaVersion", System.getProperty("java.version"));
+        // Guava: Liste zu einem Text verbinden
+        daten.put("paketText", Joiner.on(", ").join(pakete));
 
         String json = new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(daten);
         System.out.println(json);
