@@ -24,6 +24,7 @@ public class Main {
         daten.put("titel", titel);
         daten.put("anzahlPakete", pakete.size());
         daten.put("pakete", pakete);
+        daten.put("javaVersion", System.getProperty("java.version"));
 
         String json = new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(daten);
         System.out.println(json);
