@@ -19,7 +19,7 @@ public class Main {
         ImmutableList<String> pakete = ImmutableList.of("guava", "commons-lang3", "jackson-databind");
 
         // Commons Lang3: String-Hilfen
-        String titel = StringUtils.capitalize("uebung 3: paketmanager und sbom");
+        String titel = StringUtils.capitalize("uebung 3 und 4: paketmanager, sbom und git");
 
         // Jackson: Objekt als JSON ausgeben
         Map<String, Object> daten = new LinkedHashMap<>();
