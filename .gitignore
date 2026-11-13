@@ -15,3 +15,8 @@ buildNumber.properties
 .project
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
+
+# IntelliJ IDEA und macOS (aus dem bisherigen Projekt übernommen)
+.idea/
+*.iml
+.DS_Store
