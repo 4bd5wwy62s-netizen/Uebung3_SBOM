@@ -1,22 +1,3 @@
-# Übung 3: Paketmanager, Lizenzen, transitive Abhängigkeiten und SBOM
-
-Beispielprojekt in **Java** mit **IntelliJ IDEA** und dem Paketmanager (Werkzeug, das Bibliotheken automatisch herunterlädt und einbindet) **Maven**.
-
-> **Stand der Dokumentation:** Projekt gebaut, Programm getestet, Abhängigkeitsbaum, Lizenzliste (`THIRD-PARTY.txt`) und SBOM (`bom.json`) erzeugt und unten eingetragen.
-> Offen: `bom.json` in den rancher.io-Viewer laden und Screenshot machen.
-
-## Inhalt des Projekts
-
-| Datei | Zweck |
-|---|---|
-| `pom.xml` | Maven-Konfiguration (POM = Project Object Model): Pakete und CycloneDX-Plugin |
-| `src/main/java/de/uebung/Main.java` | Kleines Programm, das alle 3 Pakete benutzt |
-| `README.md` | Diese Dokumentation |
-| `bom.json` | SBOM im CycloneDX-Format (Kopie aus `target/`) |
-| `THIRD-PARTY.txt` | Lizenzliste aller 11 Pakete (Kopie aus `target/`) |
-| `CHANGELOG.md`, `PAKETE.md` | In Übung 4 über Branches hinzugefügt |
-| `.github/CODEOWNERS` | Legt fest, wer Pull Requests prüfen muss (Übung 4) |
-
 **Übung 4 (Git und GitHub)** ist [weiter unten](#übung-4-git-und-github) dokumentiert.
 
 ## Schnellstart: fertige Startknöpfe
